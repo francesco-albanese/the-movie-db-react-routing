@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes renderRoutes returns list of routes 1`] = `
+Array [
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/en"
+  />,
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/en/favourites"
+  />,
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/en/movie/:movieid"
+  />,
+  <Route
+    component={[Function]}
+    exact={true}
+    path={null}
+  />,
+]
+`;
+
+exports[`Routes renders 1`] = `
+<Switch>
+  <Route
+    component={[Function]}
+    exact={true}
+    key="home-page"
+    path="/en"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    key="favourites-page"
+    path="/en/favourites"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    key="movie-details-page"
+    path="/en/movie/:movieid"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    key="four-oh-four"
+    path={null}
+  />
+</Switch>
+`;

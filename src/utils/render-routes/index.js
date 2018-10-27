@@ -9,7 +9,8 @@ import { Route } from 'react-router-dom'
  * @returns {Array} or formatted <Route /> components
  */
 
-export const renderRoutes = ({ activeLocale, pages, routesConfig }) => {
+export const renderRoutes = ({ activeLocale = {}, pages = [], routesConfig = []} = {}) => {
+  
   return routesConfig.map(route => {
     if (route.path === null) {
       return (
@@ -33,6 +34,6 @@ export const renderRoutes = ({ activeLocale, pages, routesConfig }) => {
       )
     }
 
-    return null
+    return []
   })
 }
